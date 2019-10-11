@@ -38,6 +38,6 @@ OpenACC FP21 AXPY
 ## Publication
 Takuma Yamaguchi, Kohei Fujita, Tsuyoshi Ichimura, Akira Naruse, Muneo Hori, and Maddegedara Lalith, “GPU Implementation of a Sophisticated Implicit Low-Order Finite Element Solver with FP21-32-64 Computation Using OpenACC,” In Proceedings of Sixth Workshop on Accelerator Programming Using Directives (WACCPD), IEEE, 2019. (accepted)
 
-## Licence
+## License
 FP21AXPY, version 1.0.0　(c) 2019 Takuma Yamaguchi  
 FP21AXPY is freely distributable under the terms of an MIT-style license.
