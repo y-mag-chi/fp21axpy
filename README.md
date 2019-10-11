@@ -8,11 +8,11 @@ FP21 data type is our proposed floating-point number format, which is composed o
 
 3 × FP21 numbers are stored into 1 × 64-bit element, so it is suitable for 3-D simulations.
 
-Compared to the standard FP32 data types, 1.5-fold speedup can be expected by using FP21 data types.
+For memory bandwidth bound computations, 1.5-fold speedup can be expected by using FP21 data types compared to the standard FP32 data types.
 
 ## Requirement
 * NVIDIA GPU
-* PGI compiler
+* PGI compiler (The default makefile has been written for PGI and tested with PGI 18.10.)
 
 ## Usage
 ### Compile
