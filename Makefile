@@ -2,7 +2,7 @@
 CC = pgcc
 CXX = pgc++
 
-OBJS = main.o saxpy.o
+OBJS = main.o axpy.o
 
 PROGRAM = axpy.exe
 
