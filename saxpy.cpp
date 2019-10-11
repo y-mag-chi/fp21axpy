@@ -28,7 +28,7 @@ void convert_array_fp21_to_fp32(int n, fp21x3 *a21, float *a32){
 }
 
 
-void gpufp32_saxpy(int n, float *a, float *b, float *alpha){
+void gpufp32_axpy(int n, float *a, float *b, float *alpha){
   int i, i_xyz;
   #pragma acc parallel loop collapse(2) present(a,b,alpha) private(i,i_xyz) 
   for(i=0;i<n;i++){
@@ -39,7 +39,7 @@ void gpufp32_saxpy(int n, float *a, float *b, float *alpha){
 }
 
 
-void gpufp21_saxpy(int n, fp21x3 *a21, fp21x3 *b21, float *alpha){
+void gpufp21_axpy(int n, fp21x3 *a21, fp21x3 *b21, float *alpha){
   int i;
   float a0,a1,a2,b0,b1,b2;
   #pragma acc parallel loop present(a21,b21,alpha) private(i,a0,a1,a2,b0,b1,b2) 
