@@ -4,7 +4,7 @@ CXX = pgc++
 
 OBJS = main.o saxpy.o
 
-PROGRAM = saxpy.exe
+PROGRAM = axpy.exe
 
 CFLAGS = -O3
 CFLAGS += -acc -Minfo=accel
