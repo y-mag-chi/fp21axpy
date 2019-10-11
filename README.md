@@ -4,7 +4,7 @@ FP21AXPY
 FP21AXPY provides an example to use FP21, a custom data type, in OpenACC.
 
 ## Description
-FP21 data type is our proposed floating-point number format, which is composed of 1-bit sign bit, 8-bits exponent part, and 12-bits fraction part. FP21 has the advantage of the same dynamic range as FP32 and a better accuracy than FP16.
+FP21 data type is our proposed floating-point number format, which is composed of 1-bit sign part, 8-bit exponent part, and 12-bit fraction part. FP21 has the advantage of the same dynamic range as FP32 and a better accuracy than FP16.
 
 3 × FP21 numbers are stored into 1 × 64-bit element, so it is suitable for 3-D simulations.
 
