@@ -70,11 +70,11 @@ int main()
   convert_array_fp32_to_fp21(N, x, x21);
   convert_array_fp32_to_fp21(N, y, y21);
 
-  printf("OpenACC FP32 SAXPY\n");
+  printf("OpenACC FP32 AXPY\n");
   gettimeofday(&t0, NULL);
 
   for(int it=0; it<NT; it++){
-    gpufp32_saxpy(N, x, y, &alpha);
+    gpufp32_axpy(N, x, y, &alpha);
   }
   gettimeofday(&t1, NULL);
 
@@ -82,11 +82,11 @@ int main()
   getresults(x, 32, time);
   
 
-  printf("OpenACC FP21 SAXPY\n");
+  printf("OpenACC FP21 AXPY\n");
   gettimeofday(&t0, NULL);
 
   for(int it=0; it<NT; it++){
-    gpufp21_saxpy(N, x21, y21, &alpha);
+    gpufp21_axpy(N, x21, y21, &alpha);
   }
 
   gettimeofday(&t1, NULL); 
